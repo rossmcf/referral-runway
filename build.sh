@@ -51,11 +51,11 @@ if [ $? -gt 0 ]; then
 fi
 success "OK"
 
-info "Starting environment.."
-docker-compose -f compose-local.yml up -d --build
-if [ $? -gt 0 ]; then
-  error "Error composing"
-  exit 42
-fi
-success "OK"
+#info "Starting environment.."
+#docker-compose -f compose-local.yml up -d --build
+#if [ $? -gt 0 ]; then
+#  error "Error composing"
+#  exit 42
+#fi
+#success "OK"
 exit 0
