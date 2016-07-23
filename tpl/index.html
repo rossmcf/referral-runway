@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Referral Runway</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<style>
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Referral Runway
+				<!-- <small>Subtext for header</small> -->
+			</h1>
+		</div>
+		<form id="ref" action="docs" method="post">
+			<h2><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Referral Question</h2>
+			<div class="form-group">
+				<textarea name="referralquestion" class="form-control" rows="3" placeholder="Full referral question"></textarea>
+				<span id="helpBlock" class="help-block">This referral question will be shared with the patient and consultant.</span>
+			</div>
+			<div class="form-group">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Question agreed with patient.
+					</label>
+				</div>
+			</div>
+
+			<h2><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Risks</h2>
+			<div class="form-group">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Risks of referral discussed with patient, including:
+						<ul>
+							<li>Possible treatment and investigation</li>
+							<li>Delay in above</li>
+							<li>Multiple appointments</li>
+							<li>Over-medicalisation.</li>
+						</ul>
+					</label>
+				</div>
+			</div>
+
+			<h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Tests</h2>
+			<div class="form-group">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> All reasonable tests have been requested in primary care.
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<textarea name="testdetails" class="form-control" rows="3" placeholder="Details"></textarea>
+				<span id="helpBlock" class="help-block">Explanation of why details of tests could help here…</span>
+			</div>
+
+			<h2><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Check Address</h2>
+			<div class="form-group">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Patient confirmed address
+					</label>
+				</div>
+			</div>
+			<div class="text-right">
+				<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>

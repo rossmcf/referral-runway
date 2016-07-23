@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Referral Runway</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<style>
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Referral Runway
+				<small>Your referral documents</small>
+			</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-5 well">
+				<h1>For the Consultant
+				<br /><small>Download and send.</small></h1>
+				<a href="{{.Consultant}}" class="btn btn-primary btn-lg active" role="button">
+					<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					Consultant Copy
+				</a>
+			</div>
+
+			<div class="col-md-2"></div>
+
+			<div class="col-md-5 well">
+				<h1>For the Patient
+				<br /><small>Print and give to the patient.</small></h1>
+				<a href="{{.Patient}}" class="btn btn-primary btn-lg active" role="button">
+					<span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+					Patient Copy
+				</a>
+			</div>
+		</div>
+		<div class="row alert alert-info" role="alert">
+			<h2>Patient Questionnaire</h2>
+			<p>Now show the patient the questionnaire page, and ask that they complete it and hand it in to reception.</p>
+		</div>
+	</div>
+</body>
+</html>
